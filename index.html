@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Gautam Parihar - BCA student and aspiring software developer.">
+  <title>Gautam Parihar | Portfolio</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons (social, skills, hobbies icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Our own CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Gautam<span>.</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list text-white fs-2"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO / HOME ================= -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+
+        <!-- Left: text -->
+        <div class="col-lg-7 text-center text-lg-start">
+          <p class="hero-hello">Hello, I'm</p>
+          <h1 class="hero-name">Gautam Parihar</h1>
+          <h2 class="hero-role">
+            I am a <span id="typedText"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-desc">
+            BCA student who loves building clean, fast and responsive websites.
+            Currently learning and creating real projects with HTML, CSS, JavaScript and Bootstrap.
+          </p>
+
+          <!-- Buttons -->
+          <div class="hero-buttons">
+            <!-- Click event in js/main.js scrolls smoothly to #projects -->
+            <a href="#projects" id="exploreBtn" class="btn btn-main">
+              <i class="bi bi-rocket-takeoff me-2"></i>Explore Projects
+            </a>
+            <!-- "download" attribute makes the browser save the CV file -->
+            <a href="cv/Gautam_Parihar_CV.pdf" download="Gautam_Parihar_CV.pdf" class="btn btn-outline-main">
+              <i class="bi bi-download me-2"></i>Download CV
+            </a>
+          </div>
+
+          <!-- Social icons -->
+          <div class="social-icons justify-content-center justify-content-lg-start">
+            <a href="#" data-social="instagram" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" data-social="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://gautam44716.github.io/MYportfolio/" data-social="github" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Right: code card -->
+        <div class="col-lg-5 d-none d-md-block">
+          <div class="code-card">
+            <div class="code-dots"><span></span><span></span><span></span></div>
+<pre><code><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Gautam Parihar"</span>,
+  <span class="c-prop">course</span>: <span class="c-str">"BCA"</span>,
+  <span class="c-prop">semester</span>: <span class="c-num">5</span>,
+  <span class="c-prop">college</span>: <span class="c-str">"Star Infotech"</span>,
+  <span class="c-prop">skills</span>: [
+    <span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>,
+    <span class="c-str">"JavaScript"</span>,
+    <span class="c-str">"Bootstrap"</span>
+  ],
+  <span class="c-prop">learning</span>: <span class="c-str">"every day"</span>
+};</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section section-light">
+    <div class="container">
+      <h2 class="section-title reveal">About <span>Me</span></h2>
+
+      <div class="row align-items-center gy-5">
+        <!-- Left: photo -->
+        <div class="col-md-5 text-center reveal">
+          <div class="photo-frame">
+            <!-- Replace images/profile.svg with your own photo named images/profile.jpg -->
+            <img src="images/profile.jpg" alt="Gautam Parihar" class="img-fluid"
+              onerror="this.onerror=null; this.src='images/profile.svg';">
+          </div>
+        </div>
+
+        <!-- Right: text -->
+        <div class="col-md-7 reveal">
+          <h3 class="about-heading">Hi, I'm Gautam Parihar</h3>
+          <p>
+            I am a <strong>fifth-semester BCA student at Star Infotech College</strong> with a strong interest in
+            web development and software engineering. I enjoy turning ideas into clean, responsive and user-friendly
+            websites using HTML, CSS, JavaScript and Bootstrap.
+          </p>
+          <p>
+            Alongside my studies, I build small real-world projects such as a calculator, a stopwatch and a to-do
+            app to sharpen my logic and problem-solving skills. I am a quick learner, a good team player and always
+            curious to explore new technologies.
+          </p>
+          <p>
+            I am actively looking for <strong>internship and entry-level opportunities</strong> where I can learn
+            from experienced developers and contribute to real products.
+          </p>
+
+          <div class="row g-3 mt-2 about-stats">
+            <div class="col-4"><div class="stat-box"><h4>BCA</h4><p>5th Semester</p></div></div>
+            <div class="col-4"><div class="stat-box"><h4>3+</h4><p>Projects</p></div></div>
+            <div class="col-4"><div class="stat-box"><h4>4</h4><p>Core Skills</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section section-white">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Skills</span></h2>
+
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-6 col-md-3 reveal">
+          <div class="skill-card">
+            <i class="bi bi-filetype-html skill-icon"></i>
+            <h5>HTML5</h5>
+            <div class="progress"><div class="progress-bar" data-width="90"></div></div>
+            <span class="skill-percent">90%</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 reveal">
+          <div class="skill-card">
+            <i class="bi bi-filetype-css skill-icon"></i>
+            <h5>CSS3</h5>
+            <div class="progress"><div class="progress-bar" data-width="85"></div></div>
+            <span class="skill-percent">85%</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 reveal">
+          <div class="skill-card">
+            <i class="bi bi-filetype-js skill-icon"></i>
+            <h5>JavaScript</h5>
+            <div class="progress"><div class="progress-bar" data-width="75"></div></div>
+            <span class="skill-percent">75%</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 reveal">
+          <div class="skill-card">
+            <!-- Bootstrap logo (in place of GitHub) -->
+            <i class="bi bi-bootstrap-fill skill-icon"></i>
+            <h5>Bootstrap</h5>
+            <div class="progress"><div class="progress-bar" data-width="80"></div></div>
+            <span class="skill-percent">80%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section section-light">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Projects</span></h2>
+
+      <div class="row g-4">
+
+        <!-- Project 1: Calculator -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="card project-card position-relative h-100">
+            <div class="project-thumb"><i class="bi bi-calculator"></i></div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Calculator</h5>
+              <p class="card-text">
+                A simple calculator that performs basic calculations like addition, subtraction,
+                multiplication, division and percentage. Also works with the keyboard.
+              </p>
+              <div class="tech-badges mb-3">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="mt-auto d-flex gap-2">
+                <!-- stretched-link makes the whole card clickable -->
+                <a href="projects/calculator/index.html" class="btn btn-main btn-sm stretched-link">
+                  <i class="bi bi-box-arrow-up-right me-1"></i>Open Project
+                </a>
+                <a href="https://github.com/gautam44716/calculator" data-repo="calculator" target="_blank" rel="noopener" class="btn btn-outline-main btn-sm btn-github">
+                  <i class="bi bi-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Stopwatch -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="card project-card position-relative h-100">
+            <div class="project-thumb"><i class="bi bi-stopwatch"></i></div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Stopwatch</h5>
+              <p class="card-text">
+                A precise stopwatch with start, pause, reset and lap features. Shows minutes,
+                seconds and milliseconds in real time.
+              </p>
+              <div class="tech-badges mb-3">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="mt-auto d-flex gap-2">
+                <a href="projects/stopwatch/index.html" class="btn btn-main btn-sm stretched-link">
+                  <i class="bi bi-box-arrow-up-right me-1"></i>Open Project
+                </a>
+                <a href="https://gautam44716.github.io/stopwatch/" data-repo="stopwatch" target="_blank" rel="noopener" class="btn btn-outline-main btn-sm btn-github">
+                  <i class="bi bi-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: To-Do List -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="card project-card position-relative h-100">
+            <div class="project-thumb"><i class="bi bi-check2-square"></i></div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">To-Do List</h5>
+              <p class="card-text">
+                A task manager where you can add, complete and delete tasks. Your tasks stay saved
+                in the browser even after refreshing the page.
+              </p>
+              <div class="tech-badges mb-3">
+                <span>HTML</span><span>Bootstrap</span><span>JavaScript</span>
+              </div>
+              <div class="mt-auto d-flex gap-2">
+                <a href="projects/todo/index.html" class="btn btn-main btn-sm stretched-link">
+                  <i class="bi bi-box-arrow-up-right me-1"></i>Open Project
+                </a>
+                <a href="https://github.com/gautam44716/ToDo-List" data-repo="todo" target="_blank" rel="noopener" class="btn btn-outline-main btn-sm btn-github">
+                  <i class="bi bi-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section id="education" class="section section-white">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Education</span></h2>
+
+      <div class="timeline">
+
+        <!-- BCA -->
+        <div class="timeline-item reveal">
+          <div class="edu-card">
+            <img src="images/logo-star-infotech.svg" alt="Star Infotech College logo" class="edu-logo">
+            <div>
+              <span class="edu-year">2024 - Present</span>
+              <h5>Bachelor of Computer Applications (BCA)</h5>
+              <h6>Star Infotech College</h6>
+              <p>
+                Currently in the 5th semester. Studying programming, web development, databases and software
+                engineering, and building practical projects along the way.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12th -->
+        <div class="timeline-item reveal">
+          <div class="edu-card">
+            <img src="images/logo-pm-shri.svg" alt="PM SHRI Public School logo" class="edu-logo">
+            <div>
+              <span class="edu-year">2023 - 2024</span>
+              <h5>Class 12th (Senior Secondary)</h5>
+              <h6>PM SHRI Public School</h6>
+              <p>
+                Completed senior secondary education and built a strong foundation in problem solving and logical
+                thinking.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10th -->
+        <div class="timeline-item reveal">
+          <div class="edu-card">
+            <img src="images/logo-pm-shri.svg" alt="PM SHRI Public School logo" class="edu-logo">
+            <div>
+              <span class="edu-year">2022 - 2023</span>
+              <h5>Class 10th (Secondary)</h5>
+              <h6>PM SHRI Public School</h6>
+              <p>
+                Completed secondary education with a keen interest in computers and technology.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOBBIES ================= -->
+  <section id="hobbies" class="section section-light">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Hobbies</span></h2>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3 reveal">
+          <div class="hobby-card"><i class="bi bi-controller"></i><h5>Playing Games</h5></div>
+        </div>
+        <div class="col-6 col-md-3 reveal">
+          <div class="hobby-card"><i class="bi bi-music-note-beamed"></i><h5>Listening Music</h5></div>
+        </div>
+        <div class="col-6 col-md-3 reveal">
+          <div class="hobby-card"><i class="bi bi-book"></i><h5>Reading</h5></div>
+        </div>
+        <div class="col-6 col-md-3 reveal">
+          <div class="hobby-card"><i class="bi bi-airplane"></i><h5>Travelling</h5></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section section-white">
+    <div class="container">
+      <h2 class="section-title reveal">Contact <span>Me</span></h2>
+
+      <div class="row g-5">
+
+        <!-- Left: text + info + social -->
+        <div class="col-lg-5 reveal">
+          <h3 class="about-heading">Let's build something great together</h3>
+          <p>
+            Have a project in mind, an internship opportunity or just want to say hello? Fill in the form and your
+            message will open in Gmail, ready to send to me. I usually reply within a day.
+          </p>
+
+          <ul class="contact-info list-unstyled">
+            <li><i class="bi bi-envelope-fill"></i><span data-email-text></span></li>
+            <li><i class="bi bi-mortarboard-fill"></i><span>BCA Student, Star Infotech College</span></li>
+            <li><i class="bi bi-briefcase-fill"></i><span>Open to internships and freshers roles</span></li>
+          </ul>
+
+          <div class="social-icons">
+            <a href="#" data-social="instagram" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" data-social="github" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" data-social="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="col-lg-7 reveal">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="cName" class="form-label">Your Name</label>
+                <input type="text" id="cName" class="form-control" placeholder="Enter your name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="cEmail" class="form-label">Your Email</label>
+                <input type="email" id="cEmail" class="form-control" placeholder="Enter your email" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-12">
+                <label for="cSubject" class="form-label">Subject</label>
+                <input type="text" id="cSubject" class="form-control" placeholder="What is this about?" required>
+                <div class="invalid-feedback">Please enter a subject.</div>
+              </div>
+              <div class="col-12">
+                <label for="cMessage" class="form-label">Message</label>
+                <textarea id="cMessage" rows="5" class="form-control" placeholder="Write your message here..." required></textarea>
+                <div class="invalid-feedback">Please write your message.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-main w-100">
+                  <i class="bi bi-send-fill me-2"></i>Send via Gmail
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container text-center">
+      <h4 class="footer-brand">Gautam<span>.</span></h4>
+      <p class="footer-text">Designed and developed with <i class="bi bi-heart-fill"></i> by Gautam Parihar</p>
+
+      <div class="social-icons justify-content-center">
+        <a href="#" data-social="instagram" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" data-social="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" data-social="github" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      </div>
+
+      <hr class="footer-line">
+      <p class="copyright">&copy; <span id="year">2026</span> Gautam Parihar. All Rights Reserved.</p>
+
+      <!-- Arrow below footer: takes the visitor to the top (home) -->
+      <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
